@@ -1,0 +1,25 @@
+.custom-img {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.cardimgdiv {
+    border: 0.5px solid #4d4b62 !important;
+    border-radius: 35px;
+}
+
+.card {
+    border: 0;
+}
+
+.cardimgdiv .cardimg{
+    border: 0.5px solid #4d4b62 !important;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.cardimgdiv .card .card-body {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
