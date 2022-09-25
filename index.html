@@ -25,8 +25,8 @@
                                 <a href="Works.html" class="nav-link">How it Works</a>
                                 <a href="index.html" class="nav-link">Support</a>
                                 <div>
-                                    <button class="btn btn-outline-primary btn-sm" href="Signin.html" role="button">Sign in</button>
-                                    <button class="btn btn-primary btn-sm" href="Signup.html" role="button">Try it Free</button>
+                                    <a class="btn btn-outline-primary btn-sm" href="Signin.html" role="button">Sign in</a>
+                                    <a class="btn btn-primary btn-sm" href="Signup.html" role="button">Try it Free</a>
                                 </div>
                     </div>
                 </div>
@@ -35,14 +35,42 @@
     </div>
 
     <!-- Footer -->
-    <div class="bg-primary text-white py-5 position-absolute bottom-0 start-0 end-0">
+    <div class="bg-primary text-white py-5 position-relative bottom-0 start-0 end-0">
         <div class="container text-center text-md-center">
             <h1>Try Double Tap Today!</h2>
             <h4>Let's get started</h4>
             <div class="row my-3">
                 <div class="d-flex gap-5 justify-content-center">
-                    <button type="button" class="btn text-white rounded btn-lg" id="get-started">Get Started</button>
-                    <button type="button" class="btn bg-white text-primary rounded btn-lg" id="chat">Chat With Us</button>
+                    <a href="Signup.html" type="button" class="btn text-white rounded btn-lg" id="get-started">Get Started</a>
+                    <a href="" type="button" class="btn bg-white text-primary rounded btn-lg" id="chat">Chat With Us</a>
+                    <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                        Chat with UIs 
+                      </a>
+                      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        Button with data-bs-target
+                      </button>
+                      
+                      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header">
+                          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                          <div>
+                            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+                          </div>
+                          <div class="dropdown mt-3">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                              Dropdown button
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
                 </div>
             </div>
             <div class="row align-items-center">
