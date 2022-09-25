@@ -8,9 +8,11 @@
     <title>DoubleTap - Home</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="Button.css">
 </head>
 
-<body class="mx-5 px-5">
+<body>
 
 
 
@@ -18,7 +20,7 @@
 
 <nav class="navbar navbar-expand-lg bg-white position-sticky">
     <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img src="images/Logo.png" alt="" class="h-auto d-inline-block position-sticky" style="width: 125px;"></a>
+        <a class="navbar-brand" href="index.html"><img src="images/Logo.png" alt="" class="h-auto d-inline-block position-sticky mx-5" style="width: 125px;"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -30,8 +32,8 @@
                         <a href="Works.html" class="nav-link">How it Works</a>
                         <a href="index.html" class="nav-link">Support</a>
                         <div>
-                            <button class="btn btn-outline-primary btn-sm" href="Signin.html" role="button">Sign in</button>
-                            <button class="btn btn-primary btn-sm" href="Signup.html" role="button">Try it Free</button>
+                            <a class="btn btn-outline-primary btn-sm" href="Signin.html" role="button">Sign in</a>
+                            <a class="btn btn-primary btn-sm" href="Signup.html" role="button">Try it Free</a>
                         </div>
             </div>
         </div>
@@ -39,7 +41,7 @@
 </nav>
    
    
-   
+<div class="container">
     <div class="row mt-5 mx-5">
         <div class="col-6 mt-5">
             <div class="pt-5 pb-3">
@@ -49,19 +51,19 @@
             <p class="text-secondary pb-4">Subscription Billing, powered with revenue retention tools and a seamless
                 customer experience - without the technical hurdles.</p>
             <div class="pt-2 pb-4">
-            <button type="button" class="btn btn-primary btn-lg" href="Signup.html" style="--bs-btn-padding-y: .80rem;  --bs-btn-padding-x: 2rem;"><strong>Sign Up Free</strong>
+            <a type="button" class="btn btn-primary btn-lg" href="Signup.html" style="--bs-btn-padding-y: .80rem;  --bs-btn-padding-x: 2rem;"><strong>Sign Up Free</strong>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-right"     viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
                 <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
               </svg>
-            </button>
+            </a>
             
-            <button type="button" class="btn btn-outline-primary btn-lg" style="--bs-btn-padding-y: .80rem; --bs-btn-padding-x: 2rem;">
+            <a type="button" class="btn btn-outline-primary btn-lg" style="--bs-btn-padding-y: .80rem; --bs-btn-padding-x: 2rem;">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-dots-fill" viewBox="0  0 16 16">
                   <path d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
                 </svg> 
                 <strong>Chat With Us</strong>
-              </button>
+              </a>
             </div>
             
             <div>
@@ -177,8 +179,55 @@
             </div>
           </div>
         </div>
-      </div>
+    </div>
+</div>
+
+    <!-- Footer -->
+    <div class="container-auto bg-primary text-white py-5 position-relative bottom-0 start-0 end-0">
+        <div class="text-center text-md-center">
+            <h1>Try Double Tap Today!</h2>
+            <h4>Let's get started</h4>
+            <div class="row my-3">
+                <div class="d-flex gap-5 justify-content-center">
+                    <a type="button" class="btn text-white rounded btn-lg" id="get-started" href="Signup.html">Get Started</a>
+                    <button class="btn bg-white text-primary rounded btn-lg" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" id="chat"><img src="./images/Chat Icon.png" alt="" height="35vh">Chat With Us</button>
+
+                    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body text-dark">
+                        <div class="mb-3">
+                            <picture>
+                                <img src="images/Logo.png" alt="">
+                            </picture>
+                            <div style="height: 10vh;">
+
+                            </div>
+                            <p>How can we help?</p>
+                            <label for="Request" class="form-label"></label>
+                            <input type="Type Here">
+                        </div>
+                    </div>
+                    </div>
     
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col">
+                    <ul class="d-flex justify-content-center list-inline">
+                        <li class="list-inline-item">Free 14 day trial</li>
+                        <li class="list-inline-item"><i class="bi bi-record-fill" style="font-size: .8em;"></i></li>
+                        <li class="list-inline-item">Manage Customers in Minutes</li>
+                        <li class="list-inline-item"><i class="bi bi-record-fill" style="font-size: .8em;"></i></li>
+                        <li class="list-inline-item">Cancel at Anytime</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>

@@ -10,50 +10,43 @@
     <link rel="stylesheet" href="Button.css">
 </head>
 <body>
-    <div class="container">
 
-        <!-- Navbar -->
 
-        <nav class="navbar navbar-expand-lg bg-white position-sticky">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="/CRM-Main-AssetFiles/CRM-Main/Logo.png" alt="" class="h-auto d-inline-block position-sticky" style="width: 125px;"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <div class="navbar-nav justify-content-evenly flex-grow-1">
-                                <a href="index.html" class="nav-link">Home</a>
-                                <a href="index.html" class="nav-link">Features</a>
-                                <a href="index.html" class="nav-link">Pricing</a>
-                                <a href="Works.html" class="nav-link">How it Works</a>
-                                <a href="index.html" class="nav-link">Support</a>
-                                <div>
-                                    <button class="btn btn-outline-primary btn-sm" href="Signin.html" role="button">Sign in</button>
-                                    <button class="btn btn-primary btn-sm" href="Signup.html" role="button">Try it Free</button>
-                                </div>
-                    </div>
+    <nav class="navbar navbar-expand-lg bg-white position-sticky">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="images/Logo.png" alt="" class="h-auto d-inline-block position-sticky mx-5" style="width: 125px;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="navbar-nav justify-content-evenly flex-grow-1">
+                            <a href="index.html" class="nav-link">Home</a>
+                            <a href="index.html" class="nav-link">Features</a>
+                            <a href="index.html" class="nav-link">Pricing</a>
+                            <a href="Works.html" class="nav-link">How it Works</a>
+                            <a href="index.html" class="nav-link">Support</a>
+                            <div>
+                                <a class="btn btn-outline-primary btn-sm" href="Signin.html" role="button">Sign in</a>
+                                <a class="btn btn-primary btn-sm" href="Signup.html" role="button">Try it Free</a>
+                            </div>
                 </div>
             </div>
-        </nav>
+        </div>
+    </nav>
+    <div class="container">
 
-        <!-- content -->
-        
 
-
-    </div>
-
-    <div>
 
         <!-- This is from Brian -->
 
-        
+
         <!--I made this div to seperate the main part of the page from
         the header, footer, and navbar. I thought It might be easier to merge
         like this-->
         <div class="container">
           <!--How it works Title and first pargraph-->
             <div class="row justify-content-center text-center border-top border-dark">
-              <div class="p-4 col-4">
+              <div class="p-4">
                 <h4><strong>How It Works</strong></h4>
                 <p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam corrupti recusandae nulla aspernatur accusantium incidunt dolores quas consequuntur provident accusamus nam quidem obcaecati deserunt tempora, veniam dolorem laboriosam voluptate expedita.
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -64,7 +57,7 @@
         <div class="container">
          <!--Collect Useful Info box-->
          <div class="row justify-content-center">
-             <div class="p-3 col-8"> 
+             <div class="p-3"> 
               <div class="border rounded-5 bg-primary text-white d-inline-flex">
                 <div class="align-self-center rounded-5 rounded-end bg-white">
                   <img src="./CRM-Main-AssetFiles/CRM-Main/Collect-info.png" class="bg-transparent">
@@ -80,7 +73,7 @@
          <div class="container">
            <!--Second free pargraph-->
             <div class="row justify-content-center text-center">
-              <div class="p-4 col-4">
+              <div class="p-4">
                 <p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi id culpa iusto rerum, consectetur fugiat iure aliquid dolorem modi quaerat libero, ratione ipsa! Ad, error veritatis sed qui sequi laboriosam.
                   Lorem ipsum dolor sit. Cum sequi porro illum labore quibusdam laboriosam ex in reiciendis tenetur dolor voluptas sit?
                 </strong></p>
@@ -90,7 +83,7 @@
         <div class="container">
           <!--Get paid Sooner box-->
           <div class="row justify-content-center">
-            <div class="p-3 col-8"> 
+            <div class="p-3"> 
              <div class="border rounded-5 bg-primary text-white d-inline-flex">
                <div class="align-self-center rounded-5 rounded-end bg-white">
                  <img src="CRM-Main-AssetFiles/CRM-Main/Take Payments.png" class="bg-transparent">
@@ -105,32 +98,52 @@
         </div>
     </div>
 
-    <!-- Footer -->
-    <div class="bg-primary text-white py-5 position-relative bottom-0 start-0 end-0">
-        <div class="container text-center text-md-center">
-            <h1>Try Double Tap Today!</h2>
-            <h4>Let's get started</h4>
-            <div class="row my-3">
-                <div class="d-flex gap-5 justify-content-center">
-                    <button type="button" class="btn text-white rounded btn-lg" id="get-started">Get Started</button>
-                    <button type="button" class="btn bg-white text-primary rounded btn-lg" id="chat">Chat With Us</button>
+ <!-- Footer -->
+ <div class="container-auto bg-primary text-white py-5 position-relative bottom-0 start-0 end-0">
+    <div class="text-center text-md-center">
+        <h1>Try Double Tap Today!</h2>
+        <h4>Let's get started</h4>
+        <div class="row my-3">
+            <div class="d-flex gap-5 justify-content-center">
+                <a type="button" class="btn text-white rounded btn-lg" id="get-started" href="Signup.html">Get Started</a>
+                <button class="btn bg-white text-primary rounded btn-lg" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" id="chat"><img src="./images/Chat Icon.png" alt="" height="35vh">Chat With Us</button>
+
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
+                <div class="offcanvas-body text-dark">
+                    <div class="mb-3">
+                        <picture>
+                            <img src="images/Logo.png" alt="">
+                        </picture>
+                        <div style="height: 10vh;">
+
+                        </div>
+                        <p>How can we help?</p>
+                        <label for="Request" class="form-label"></label>
+                        <input type="Type Here">
+                    </div>
+                </div>
+                </div>
+
             </div>
-            <div class="row align-items-center">
-                <div class="col">
-                    <ul class="d-flex justify-content-center list-inline">
-                        <li class="list-inline-item">Free 14 day trial</li>
-                        <li class="list-inline-item"><i class="bi bi-record-fill" style="font-size: .8em;"></i></li>
-                        <li class="list-inline-item">Manage Customers in Minutes</li>
-                        <li class="list-inline-item"><i class="bi bi-record-fill" style="font-size: .8em;"></i></li>
-                        <li class="list-inline-item">Cancel at Anytime</li>
-                    </ul>
-                </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col">
+                <ul class="d-flex justify-content-center list-inline">
+                    <li class="list-inline-item">Free 14 day trial</li>
+                    <li class="list-inline-item"><i class="bi bi-record-fill" style="font-size: .8em;"></i></li>
+                    <li class="list-inline-item">Manage Customers in Minutes</li>
+                    <li class="list-inline-item"><i class="bi bi-record-fill" style="font-size: .8em;"></i></li>
+                    <li class="list-inline-item">Cancel at Anytime</li>
+                </ul>
             </div>
         </div>
     </div>
-    <!-- Footer End -->
-    
+</div>
+<!-- Footer End -->
         
 
 
